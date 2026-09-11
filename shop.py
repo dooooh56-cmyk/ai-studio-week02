@@ -34,3 +34,8 @@ class Order:
     self.items.append((name, price))
     self.customer.add_poits(price)
 
+c1 = Customer('김서강', 'vip', 2250)
+c2 = Customer('최소강')
+
+o1 = Order("A-1001", c1, [("아메리카노", 2000), ("카페라떼", 3500)])
+o2 = Order("A-1002", c2, [()])
